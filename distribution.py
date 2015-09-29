@@ -1,7 +1,7 @@
 """
 distribution.py
-Author: <your name here>
-Credit: <list sources used, if any>
+Author: Morgan Meliment
+Credit: http://stackoverflow.com/questions/2587402/sorting-python-list-based-on-the-length-of-the-string, http://stackoverflow.com/questions/6797984/how-to-convert-string-to-lowercase-in-python
 
 Assignment:
 
@@ -36,3 +36,26 @@ Notice about this example:
   in the text and they are listed in the output in alphabetical order.
 * Letters that do not occur in the text are not listed in the output at all.
 """
+inputstr = input("Please enter a string of text (the bigger the better): ").lower()
+print("The distribution of characters in " + '"' + inputstr + '"' + " is:")
+alphabet = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z']
+tprint = []
+for x in alphabet:
+    count = inputstr.count(x)
+    q = 0
+    uy = []
+    while q < count:
+        q += 1
+        uy.append(x)
+    if uy != []:
+        fin = "".join(c for c in uy)
+        tprint.append(fin)
+sakd = tprint.sort(key = len)[::-1]
+for d in sakd:
+    print(d)
+
+
+
+
+
+
