@@ -1,7 +1,7 @@
 """
 distribution.py
 Author: Morgan Meliment
-Credit: http://stackoverflow.com/questions/2587402/sorting-python-list-based-on-the-length-of-the-string, http://stackoverflow.com/questions/6797984/how-to-convert-string-to-lowercase-in-python
+Credit: http://stackoverflow.com/questions/4659524/how-to-sort-by-length-of-string-followed-by-alphabetical-order, http://stackoverflow.com/questions/6797984/how-to-convert-string-to-lowercase-in-python
 
 Assignment:
 
@@ -50,8 +50,8 @@ for x in alphabet:
     if uy != []:
         fin = "".join(c for c in uy)
         tprint.append(fin)
-sakd = tprint.sort(key = len)
-for d in reversed(sakd):
+sakd = tprint.sort(key = len, reverse=True)
+for d in sakd:
     print(d)
 
 
