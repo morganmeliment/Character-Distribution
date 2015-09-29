@@ -50,8 +50,8 @@ for x in alphabet:
     if uy != []:
         fin = "".join(c for c in uy)
         tprint.append(fin)
-sakd = tprint.sort(key = len)[::-1]
-for d in sakd:
+sakd = tprint.sort(key = len)
+for d in sakd[::-1]:
     print(d)
 
 
