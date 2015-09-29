@@ -51,7 +51,7 @@ for x in alphabet:
         fin = "".join(c for c in uy)
         tprint.append(fin)
 sakd = tprint.sort(key = len)
-for d in list(sakd)[::-1]:
+for d in reversed(sakd):
     print(d)
 
 
